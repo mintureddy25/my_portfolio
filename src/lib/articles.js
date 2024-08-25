@@ -4,7 +4,7 @@ async function importArticle(articleFilename) {
   let { article } = await import(`../app/articles/${articleFilename}`)
 
   return {
-    slug: articleFilename.replace(/(\/page)?\.mdx$/, ''),
+    slug: articleFilename.replace(/(\/page)?\.mdx$/, ''), 
     ...article,
   }
 }
