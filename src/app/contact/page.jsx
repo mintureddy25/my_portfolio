@@ -4,8 +4,6 @@ import { addIntoSpreadSheet } from '../apis/googleSpreadSheetApi';
 import { useRouter } from 'next/navigation';
 import Loader from '@/components/loader';
 
-
-
 export default function Contact() {
   const router = useRouter();
   // Initialize state for form fields
@@ -53,10 +51,8 @@ export default function Contact() {
     // Log form data or handle it as needed
     console.log('Form Data:', formData);
   };
-  if(isLoading){
-    return(
-      <Loader message="Sending your message" />
-    );
+  if (isLoading) {
+    return <Loader message="Sending your message" />;
   }
 
   return (
