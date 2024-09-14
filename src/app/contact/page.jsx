@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import { addIntoSpreadSheet } from '../apis/googleSpreadSheetApi';
 import { useRouter } from 'next/navigation';
+import Loader from '@/components/loader';
+
+
 
 export default function Contact() {
   const router = useRouter();
@@ -13,6 +16,7 @@ export default function Contact() {
     phoneNumber: '',
     message: '',
   });
+  const [isLoading, setIsLoading] = useState(false);
 
   // Handle form field changes
   const handleChange = (e) => {
@@ -28,7 +32,9 @@ export default function Contact() {
     e.preventDefault();
 
     try {
+      setIsLoading(true);
       const result = await addIntoSpreadSheet(formData);
+      //setIsLoading(false);
       router.push('/thank-you?thanks=contact_me');
 
       setFormData({
@@ -39,12 +45,19 @@ export default function Contact() {
         message: '',
       }); // Show response from Google Apps Script
     } catch (error) {
+      //setIsLoading(false);
     } finally {
+      //setIsLoading(false);
       // Reset form submission state
     }
     // Log form data or handle it as needed
     console.log('Form Data:', formData);
   };
+  if(isLoading){
+    return(
+      <Loader message="Sending your message" />
+    );
+  }
 
   return (
     <div className="px-6 py-24 sm:py-32 lg:px-8">

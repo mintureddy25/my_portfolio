@@ -192,7 +192,7 @@ function Resume() {
       company: 'Cognizant Technology Solutions',
       title: 'Software Engineer',
       logo: logoCognizant,
-      start: 'May 2022',
+      start: 'May 2023',
       end: 'Apr 2024',
     },
     {
