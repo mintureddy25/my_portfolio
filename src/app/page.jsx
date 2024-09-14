@@ -17,6 +17,7 @@ import logoPlanetaria from '@/images/logos/planetaria.svg';
 import logoStarbucks from '@/images/logos/starbucks.svg';
 import logoHubhopper from '@/images/logos/hubhopper_logo.jpeg';
 import logoCognizant from '@/images/logos/download.jpeg';
+import logoPhotomath from '@/images/logos/photomath.png';
 import image1 from '@/images/photos/image-1.jpg';
 import image2 from '@/images/photos/image-2.jpg';
 import image3 from '@/images/photos/image-3.jpg';
@@ -210,9 +211,9 @@ function Resume() {
       end: 'July 2024',
     },
     {
-      company: 'Freelancing',
-      title: 'Freelance Expert',
-      logo: logoAirbnb,
+      company: 'Photomath',
+      title: 'Freelance  Math Expert',
+      logo: logoPhotomath,
       start: 'Apr 2019',
       end: 'July 2022',
     },
@@ -230,7 +231,7 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="https://drive.google.com/uc?export=download&id=1jMaALB-1WcnuiVSkFMR3cieZZ7O4fBrp"
+        href="/CSTR_Resume_.pdf"
         download="saiteja_reddy_resume.pdf"
         variant="secondary"
         className="group mt-6 w-full"
