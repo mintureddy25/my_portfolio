@@ -1,15 +1,42 @@
-import { SimpleLayout } from '@/components/SimpleLayout'
+"use client";
 
-export const metadata = {
-  title: 'You’re subscribed',
-  description: 'Thanks for subscribing to my newsletter.',
-}
+import { useRouter } from 'next/navigation'; // For Next.js 13+ App Router
+import { useEffect, useState } from 'react';
+import { SimpleLayout } from '@/components/SimpleLayout';
 
 export default function ThankYou() {
+  const router = useRouter();
+  const [queryParam, setQueryParam] = useState(null);
+
+  useEffect(() => {
+    // Ensure the query object is defined and safely extract the `thanks` parameter
+    if (router.query) {
+      const thanks = router.query.thanks || null;
+      console.log("Query parameters:", router.query);
+      console.log("Extracted 'thanks':", thanks);
+      setQueryParam(thanks);
+    }
+  }, [router.query]);
+
+  // Default messages
+  const defaultTitle = "Thanks for getting in touch!";
+  const defaultIntro = "I’ve received your message and can’t wait to chat. I’ll get back to you as soon as possible. In the meantime, if you need anything urgent, don’t hesitate to reach out again. Looking forward to our conversation!";
+
+  const customMessages = {
+    contact_me: {
+      title: 'Thanks for getting in touch!',
+      intro: 'I’ve received your message and can’t wait to chat. I’ll get back to you as soon as possible. In the meantime, if you need anything urgent, don’t hesitate to reach out again. Looking forward to our conversation!'
+    },
+    // Add more custom messages as needed
+  };
+
+  // Determine the title and intro based on the `thanks` query parameter
+  const { title, intro } = customMessages[queryParam] || { title: defaultTitle, intro: defaultIntro };
+
   return (
     <SimpleLayout
-      title="Thanks for subscribing."
-      intro="I’ll send you an email any time I publish a new blog post, release a new project, or have anything interesting to share that I think you’d want to hear about. You can unsubscribe at any time, no hard feelings."
+      title={title}
+      intro={intro}
     />
-  )
+  );
 }

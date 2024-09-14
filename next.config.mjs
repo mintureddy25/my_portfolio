@@ -7,7 +7,7 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   experimental: {
     outputFileTracingIncludes: {
-      '/articles/*': ['./src/app/articles/**/*.mdx'],
+      '/experiences/*': ['./src/app/experiences/**/*.mdx'],
     },
   },
 }

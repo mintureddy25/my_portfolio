@@ -7,45 +7,39 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoFacebook from '@/images/logos/facebook.svg'
+
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Foodie-Food Delivery App (Frontend)',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+      'I developed the front end for the Foodie app, a food delivery platform similar to Swiggy, using React and Tailwind CSS. The app includes both customer and eatery interfaces.',
+    link: { href: 'https://github.com/mintureddy25/foodie_frontend', label: 'Foodie-Food Delivery App' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
+    name: 'Foodie-Food Delivery App (Backend)',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
+      'I built the back end for the Foodie app using Node.js and Express.js, managing server-side logic and database interactions with an SQL database.',
+    link: { href: 'https://github.com/mintureddy25/foodie_backend', label: 'Foodie-Food Delivery App' },
     logo: logoAnimaginary,
   },
   {
-    name: 'HelioStream',
+    name: 'Audio Editor',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
+      'Built an advanced audio editing tool using React with Wavesurfer.js for visualization and editing, and integrated RecordRTC for high-quality audio recording and playback.',
+    link: { href: 'https://github.com/mintureddy25/audio-editor', label: 'Audio Editor' },
     logo: logoHelioStream,
   },
   {
-    name: 'cosmOS',
+    name: 'Facebook Page Insights',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
+      ' Implemented a "Login with Facebook" button for user authentication and used the Facebook Graph API to enable users to view and analyze insights for their pages, enhancing their page management experience.',
+    link: { href: 'https://github.com/mintureddy25/facebook_pages', label: 'facebook_pages' },
+    logo: logoFacebook,
+  }
 ]
-
 function LinkIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -59,14 +53,14 @@ function LinkIcon(props) {
 
 export const metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'Projects and Contributions',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Projects and Contributions"
+      intro="Here are some key projects I’m proud of. Many are open-source, so feel free to explore and contribute if you have ideas for improvements."
     >
       <ul
         role="list"

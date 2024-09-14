@@ -1,0 +1,61 @@
+import { ExperienceLayout } from '@/components/ExperienceLayout';
+
+
+export const experience = {
+  title: 'Cognizant Technology Solutions',
+  description: `At Cognizant Technology Solutions in Chennai, I worked as a Software Engineer and CSD Intern. As a Software Engineer, I led the development of an employee management website for Walgreens, including the successful creation of a leave portal and implementation of an RTO tracking feature. During my internship, I gained hands-on experience in full-stack development using AngularJS, HTML, CSS, and Java Spring Boot.`,
+  date: 'May 2022 – Apr 2024', // Added date field
+  details: [
+    {
+      role: 'Software Engineer',
+      company: 'Cognizant Technology Solutions',
+      location: 'Chennai',
+      dateRange: 'May 2022 – Apr 2024',
+      responsibilities: [
+        'Led development of an employee management website for Walgreens client, including successful end-to-end creation of a leave portal.',
+        'Implemented RTO tracking feature by integrating attendance regularity and work location data for effective monitoring.',
+      ],
+    },
+    {
+      role: 'CSD Intern',
+      company: 'Cognizant Technology Solutions',
+      location: 'Chennai',
+      dateRange: 'Sept 2022 – Mar 2023',
+      responsibilities: [
+        'Internship experience in full-stack development using AngularJS, HTML, CSS, and Java Spring Boot.',
+      ],
+    },
+  ],
+};
+
+export const metadata = {
+  title: experience.title,
+  description: experience.description,
+};
+
+export default function ExperiencePage(props) {
+  return (
+    <ExperienceLayout experience={experience} {...props}>
+      
+      <section>
+        <h2>Experience Details</h2>
+        <p><strong>Date:</strong> {experience.date}</p> {/* Added date display */}
+        <p>{experience.description}</p>
+        {experience.details.map((role, index) => (
+          <div key={index}>
+            <h3>{role.role}</h3>
+            <p><strong>Company:</strong> {role.company}</p>
+            <p><strong>Location:</strong> {role.location}</p>
+            <p><strong>Date Range:</strong> {role.dateRange}</p>
+            <h4>Responsibilities</h4>
+            <ul>
+              {role.responsibilities.map((responsibility, idx) => (
+                <li key={idx}>{responsibility}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+    </ExperienceLayout>
+  );
+}

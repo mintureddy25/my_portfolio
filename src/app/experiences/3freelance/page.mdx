@@ -1,0 +1,60 @@
+import { ExperienceLayout } from '@/components/ExperienceLayout';
+
+
+export const experience = {
+  title: 'Freelancing',
+  description: `As a Freelance Developer and Freelance Expert based in Hyderabad, I worked on a variety of projects. I designed and developed features for cricket betting platforms, including match betting and round-by-round betting functionalities. Additionally, I enhanced user interfaces and solution views for mathematical problems using LaTeX in Photomath.`,
+  date: 'Apr 2019 – July 2024', // Combined date range for all freelance roles
+  details: [
+    {
+      role: 'Freelance Developer',
+      company: 'Freelancing',
+      location: 'Hyderabad',
+      dateRange: 'Apr 2024 – July 2024',
+      responsibilities: [
+        'Designed and developed features for cricket betting, including match betting and round-by-round betting functionalities.',
+      ],
+    },
+    {
+      role: 'Freelance Expert',
+      company: 'Freelancing',
+      location: 'Hyderabad',
+      dateRange: 'Apr 2019 – July 2022',
+      responsibilities: [
+        'Contributed to enhancing the user interface and solution views for mathematical problems using LaTeX in Photomath.',
+      ],
+    },
+  ],
+};
+
+export const metadata = {
+  title: experience.title,
+  description: experience.description,
+};
+
+export default function ExperiencePage(props) {
+  return (
+    <ExperienceLayout experience={experience} {...props}>
+      
+      <section>
+        <h2>Experience Details</h2>
+        <p><strong>Date:</strong> {experience.date}</p> {/* Added date display */}
+        <p>{experience.description}</p>
+        {experience.details.map((role, index) => (
+          <div key={index}>
+            <h3>{role.role}</h3>
+            <p><strong>Company:</strong> {role.company}</p>
+            <p><strong>Location:</strong> {role.location}</p>
+            <p><strong>Date Range:</strong> {role.dateRange}</p>
+            <h4>Responsibilities</h4>
+            <ul>
+              {role.responsibilities.map((responsibility, idx) => (
+                <li key={idx}>{responsibility}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+    </ExperienceLayout>
+  );
+}

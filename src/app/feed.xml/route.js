@@ -10,8 +10,8 @@ export async function GET(req) {
   }
 
   let author = {
-    name: 'Spencer Sharp',
-    email: 'spencer@planetaria.tech',
+    name: 'Sai Teja',
+    email: 'chappetasaitejareddy@gmail.com',
   }
 
   let feed = new Feed({
@@ -28,22 +28,22 @@ export async function GET(req) {
     },
   })
 
-  let articleIds = require
-    .context('../articles', true, /\/page\.mdx$/)
+  let experienceIds = require
+    .context('../experiences', true, /\/page\.mdx$/)
     .keys()
     .filter((key) => key.startsWith('./'))
     .map((key) => key.slice(2).replace(/\/page\.mdx$/, ''))
 
-  for (let id of articleIds) {
-    let url = String(new URL(`/articles/${id}`, req.url))
+  for (let id of experienceIds) {
+    let url = String(new URL(`/experiences/${id}`, req.url))
     let html = await (await fetch(url)).text()
     let $ = cheerio.load(html)
 
-    let publicUrl = `${siteUrl}/articles/${id}`
-    let article = $('article').first()
-    let title = article.find('h1').first().text()
-    let date = article.find('time').first().attr('datetime')
-    let content = article.find('[data-mdx-content]').first().html()
+    let publicUrl = `${siteUrl}/experiences/${id}`
+    let experience = $('experience').first()
+    let title = experience.find('h1').first().text()
+    let date = experience.find('time').first().attr('datetime')
+    let content = experience.find('[data-mdx-content]').first().html()
 
     assert(typeof title === 'string')
     assert(typeof date === 'string')

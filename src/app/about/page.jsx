@@ -38,8 +38,7 @@ function MailIcon(props) {
 
 export const metadata = {
   title: 'About',
-  description:
-    'I’m Sai Teja Reddy Chappeta, I live in Hyderabad City.',
+  description: 'I’m Sai Teja Reddy Chappeta, I live in Hyderabad City.',
 }
 
 export default function About() {
@@ -58,34 +57,47 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-          I’m Sai Teja Reddy Chappeta, I live in Hyderabad City.
+            I’m Sai Teja Reddy Chappeta, I live in Hyderabad City.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              I am a seasoned Full Stack Developer with a robust background in
+              designing and optimizing complex applications. Currently working
+              with Hubhopper in Delhi, I focus on enhancing podcast platforms by
+              integrating advanced features such as analytics, chapter
+              management, and automated email systems. My experience includes
+              seamless integration of frontend interfaces with backend
+              functionalities and cloud storage solutions, leveraging
+              technologies like React, Node.js, AWS, and Elasticsearch to
+              deliver high-impact results.
             </p>
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              Previously, at Cognizant Technology Solutions in Chennai, I led
+              the development of an employee management website and RTO tracking
+              features, showcasing my capability to handle end-to-end project
+              development and effective system integration. My internship
+              experience with Cognizant further enriched my full-stack
+              development skills, where I utilized AngularJS, Java Spring Boot,
+              and other technologies to build robust applications.
             </p>
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
+              As a freelancer, I developed a comprehensive food delivery app,
+              Foodie, using a React frontend and a Node.js backend with
+              Express.js APIs. This project included customer and eatery
+              dashboards, secure API interactions, and robust data management
+              with MySQL. Additionally, I designed features for cricket betting
+              applications and contributed to UI enhancements for educational
+              tools like Photomath and Chegg, demonstrating my ability to adapt
+              and excel across diverse domains.
             </p>
             <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              My educational background in Mechatronics from Sastra Deemed
+              University, combined with a strong foundation in various
+              programming languages and frameworks, has equipped me with a solid
+              technical acumen. I am passionate about leveraging my skills to
+              drive innovation and deliver effective solutions, continuously
+              seeking opportunities to grow and contribute to impactful
+              projects.
             </p>
           </div>
         </div>
@@ -97,10 +109,18 @@ export default function About() {
             <SocialLink href="#" icon={InstagramIcon} className="mt-4">
               Follow on Instagram
             </SocialLink>
-            <SocialLink href="https://github.com/mintureddy25" icon={GitHubIcon} className="mt-4">
+            <SocialLink
+              href="https://github.com/mintureddy25"
+              icon={GitHubIcon}
+              className="mt-4"
+            >
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="https://www.linkedin.com/in/sai-teja-reddy-chappeta-158a3021b/" icon={LinkedInIcon} className="mt-4">
+            <SocialLink
+              href="https://www.linkedin.com/in/sai-teja-reddy-chappeta-158a3021b/"
+              icon={LinkedInIcon}
+              className="mt-4"
+            >
               Follow on LinkedIn
             </SocialLink>
             <SocialLink
