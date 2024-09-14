@@ -1,8 +1,8 @@
 {
   "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
   "rules": {
+    "quotes": ["error", "double"],
     "react/no-unescaped-entities": "off",
-    "semi": ["error", "always"],
-    "quotes": ["error", "single"]
+    "semi": ["error", "always"]
   }
 }
