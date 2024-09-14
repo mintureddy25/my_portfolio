@@ -1,6 +1,6 @@
-const typographyPlugin = require('@tailwindcss/typography')
+const typographyPlugin = require('@tailwindcss/typography');
 
-const typographyStyles = require('./typography')
+const typographyStyles = require('./typography');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -25,4 +25,4 @@ module.exports = {
     },
     typography: typographyStyles,
   },
-}
+};

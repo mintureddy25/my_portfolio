@@ -1,29 +1,29 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import clsx from 'clsx'
+import Image from 'next/image';
+import Link from 'next/link';
+import clsx from 'clsx';
 
-import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
-import { Container } from '@/components/Container'
+import { Button } from '@/components/Button';
+import { Card } from '@/components/Card';
+import { Container } from '@/components/Container';
 import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
   XIcon,
-} from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
-import logoHubhopper from '@/images/logos/hubhopper_logo.jpeg'
-import logoCognizant from '@/images/logos/download.jpeg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
-import { getAllExperiences } from '@/lib/experiences'
-import { formatDate } from '@/lib/formatDate'
+} from '@/components/SocialIcons';
+import logoAirbnb from '@/images/logos/airbnb.svg';
+import logoFacebook from '@/images/logos/facebook.svg';
+import logoPlanetaria from '@/images/logos/planetaria.svg';
+import logoStarbucks from '@/images/logos/starbucks.svg';
+import logoHubhopper from '@/images/logos/hubhopper_logo.jpeg';
+import logoCognizant from '@/images/logos/download.jpeg';
+import image1 from '@/images/photos/image-1.jpg';
+import image2 from '@/images/photos/image-2.jpg';
+import image3 from '@/images/photos/image-3.jpg';
+import image4 from '@/images/photos/image-4.jpg';
+import image5 from '@/images/photos/image-5.jpg';
+import { getAllExperiences } from '@/lib/experiences';
+import { formatDate } from '@/lib/formatDate';
 
 function MailIcon(props) {
   return (
@@ -45,7 +45,7 @@ function MailIcon(props) {
         className="stroke-zinc-400 dark:stroke-zinc-500"
       />
     </svg>
-  )
+  );
 }
 
 function BriefcaseIcon(props) {
@@ -68,7 +68,7 @@ function BriefcaseIcon(props) {
         className="stroke-zinc-400 dark:stroke-zinc-500"
       />
     </svg>
-  )
+  );
 }
 
 function ArrowDownIcon(props) {
@@ -81,7 +81,7 @@ function ArrowDownIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
 function Experience({ experience }) {
@@ -91,12 +91,12 @@ function Experience({ experience }) {
         {experience.title}
       </Card.Title>
       <Card.Eyebrow as="time" dateTime={experience.date} decorate>
-        {(experience.date)}
+        {experience.date}
       </Card.Eyebrow>
       <Card.Description>{experience.description}</Card.Description>
       <Card.Cta>Read more</Card.Cta>
     </Card>
-  )
+  );
 }
 
 function SocialLink({ icon: Icon, ...props }) {
@@ -104,7 +104,7 @@ function SocialLink({ icon: Icon, ...props }) {
     <Link className="group -m-1 p-1" {...props}>
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
-  )
+  );
 }
 
 function Newsletter() {
@@ -133,50 +133,50 @@ function Newsletter() {
         </Button>
       </div>
     </form>
-  )
+  );
 }
 
 function Role({ role }) {
   let startLabel =
-    typeof role.start === 'string' ? role.start : role.start.label
+    typeof role.start === 'string' ? role.start : role.start.label;
   let startDate =
-    typeof role.start === 'string' ? role.start : role.start.dateTime
+    typeof role.start === 'string' ? role.start : role.start.dateTime;
 
-  let endLabel = typeof role.end === 'string' ? role.end : role.end.label
-  let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
+  let endLabel = typeof role.end === 'string' ? role.end : role.end.label;
+  let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime;
 
   return (
     <li className="flex gap-4">
-    <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-      <Image 
-        src={role.logo} 
-        alt={`${role.company} logo`} 
-        className="rounded-full object-cover" 
-        layout="fill" // Ensure the image covers the container
-        unoptimized 
-      />
-    </div>
-    <dl className="flex flex-auto flex-wrap gap-x-2">
-      <dt className="sr-only">Company</dt>
-      <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-        {role.company}
-      </dd>
-      <dt className="sr-only">Role</dt>
-      <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-        {role.title}
-      </dd>
-      <dt className="sr-only">Date</dt>
-      <dd
-        className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-        aria-label={`${startLabel} until ${endLabel}`}
-      >
-        <time dateTime={startDate}>{startLabel}</time>{' '}
-        <span aria-hidden="true">—</span>{' '}
-        <time dateTime={endDate}>{endLabel}</time>
-      </dd>
-    </dl>
-  </li>
-  )
+      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+        <Image
+          src={role.logo}
+          alt={`${role.company} logo`}
+          className="rounded-full object-cover"
+          layout="fill" // Ensure the image covers the container
+          unoptimized
+        />
+      </div>
+      <dl className="flex flex-auto flex-wrap gap-x-2">
+        <dt className="sr-only">Company</dt>
+        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+          {role.company}
+        </dd>
+        <dt className="sr-only">Role</dt>
+        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+          {role.title}
+        </dd>
+        <dt className="sr-only">Date</dt>
+        <dd
+          className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+          aria-label={`${startLabel} until ${endLabel}`}
+        >
+          <time dateTime={startDate}>{startLabel}</time>{' '}
+          <span aria-hidden="true">—</span>{' '}
+          <time dateTime={endDate}>{endLabel}</time>
+        </dd>
+      </dl>
+    </li>
+  );
 }
 
 function Resume() {
@@ -186,7 +186,7 @@ function Resume() {
       title: 'Full Stack Developer',
       logo: logoHubhopper,
       start: 'Apr 2024', // Add specific date range if available
-      end: 'Present',   // Add specific end date or 'Present'
+      end: 'Present', // Add specific end date or 'Present'
     },
     {
       company: 'Cognizant Technology Solutions',
@@ -229,16 +229,27 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button href="https://drive.google.com/uc?export=download&id=1jMaALB-1WcnuiVSkFMR3cieZZ7O4fBrp" download='saiteja_reddy_resume.pdf' variant="secondary" className="group mt-6 w-full">
+      <Button
+        href="https://drive.google.com/uc?export=download&id=1jMaALB-1WcnuiVSkFMR3cieZZ7O4fBrp"
+        download="saiteja_reddy_resume.pdf"
+        variant="secondary"
+        className="group mt-6 w-full"
+      >
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
-  )
+  );
 }
 
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  let rotations = [
+    'rotate-2',
+    '-rotate-2',
+    'rotate-2',
+    'rotate-2',
+    '-rotate-2',
+  ];
 
   return (
     <div className="mt-16 sm:mt-20">
@@ -261,11 +272,11 @@ function Photos() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default async function Home() {
-  let experiences = (await getAllExperiences()).slice(0, 4)
+  let experiences = (await getAllExperiences()).slice(0, 4);
 
   return (
     <>
@@ -281,7 +292,11 @@ export default async function Home() {
             realm of YouTube content creation.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink href="https://x.com/saiteja_reddy25" aria-label="Follow on X" icon={XIcon} />
+            <SocialLink
+              href="https://x.com/saiteja_reddy25"
+              aria-label="Follow on X"
+              icon={XIcon}
+            />
             <SocialLink
               href="https://www.instagram.com/mintuu_25/?igsh=NXk4M2lyajB4OGJ2&utm_source=qr"
               aria-label="Follow on Instagram"
@@ -315,5 +330,5 @@ export default async function Home() {
         </div>
       </Container>
     </>
-  )
+  );
 }

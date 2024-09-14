@@ -1,45 +1,56 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
-import { Card } from '@/components/Card'
-import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-
+import { Card } from '@/components/Card';
+import { SimpleLayout } from '@/components/SimpleLayout';
+import logoAnimaginary from '@/images/logos/animaginary.svg';
+import logoCosmos from '@/images/logos/cosmos.svg';
+import logoHelioStream from '@/images/logos/helio-stream.svg';
+import logoOpenShuttle from '@/images/logos/open-shuttle.svg';
+import logoPlanetaria from '@/images/logos/planetaria.svg';
+import logoFacebook from '@/images/logos/facebook.svg';
 
 const projects = [
   {
     name: 'Foodie-Food Delivery App (Frontend)',
     description:
       'I developed the front end for the Foodie app, a food delivery platform similar to Swiggy, using React and Tailwind CSS. The app includes both customer and eatery interfaces.',
-    link: { href: 'https://github.com/mintureddy25/foodie_frontend', label: 'Foodie-Food Delivery App' },
+    link: {
+      href: 'https://github.com/mintureddy25/foodie_frontend',
+      label: 'Foodie-Food Delivery App',
+    },
     logo: logoPlanetaria,
   },
   {
     name: 'Foodie-Food Delivery App (Backend)',
     description:
       'I built the back end for the Foodie app using Node.js and Express.js, managing server-side logic and database interactions with an SQL database.',
-    link: { href: 'https://github.com/mintureddy25/foodie_backend', label: 'Foodie-Food Delivery App' },
+    link: {
+      href: 'https://github.com/mintureddy25/foodie_backend',
+      label: 'Foodie-Food Delivery App',
+    },
     logo: logoAnimaginary,
   },
   {
     name: 'Audio Editor',
     description:
       'Built an advanced audio editing tool using React with Wavesurfer.js for visualization and editing, and integrated RecordRTC for high-quality audio recording and playback.',
-    link: { href: 'https://github.com/mintureddy25/audio-editor', label: 'Audio Editor' },
+    link: {
+      href: 'https://github.com/mintureddy25/audio-editor',
+      label: 'Audio Editor',
+    },
     logo: logoHelioStream,
   },
   {
     name: 'Facebook Page Insights',
     description:
       ' Implemented a "Login with Facebook" button for user authentication and used the Facebook Graph API to enable users to view and analyze insights for their pages, enhancing their page management experience.',
-    link: { href: 'https://github.com/mintureddy25/facebook_pages', label: 'facebook_pages' },
+    link: {
+      href: 'https://github.com/mintureddy25/facebook_pages',
+      label: 'facebook_pages',
+    },
     logo: logoFacebook,
-  }
-]
+  },
+];
 function LinkIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
@@ -48,13 +59,13 @@ function LinkIcon(props) {
         fill="currentColor"
       />
     </svg>
-  )
+  );
 }
 
 export const metadata = {
   title: 'Projects',
   description: 'Projects and Contributions',
-}
+};
 
 export default function Projects() {
   return (
@@ -88,5 +99,5 @@ export default function Projects() {
         ))}
       </ul>
     </SimpleLayout>
-  )
+  );
 }

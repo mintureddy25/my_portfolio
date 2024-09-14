@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React, { useState } from 'react';
 import { addIntoSpreadSheet } from '../apis/googleSpreadSheetApi';
 import { useRouter } from 'next/navigation';
@@ -24,14 +24,13 @@ export default function Contact() {
   };
 
   // Handle form submission
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
-  
       const result = await addIntoSpreadSheet(formData);
       router.push('/thank-you?thanks=contact_me');
-      
+
       setFormData({
         firstName: '',
         lastName: '',
@@ -40,13 +39,11 @@ export default function Contact() {
         message: '',
       }); // Show response from Google Apps Script
     } catch (error) {
-      
     } finally {
-       // Reset form submission state
+      // Reset form submission state
     }
     // Log form data or handle it as needed
     console.log('Form Data:', formData);
-
   };
 
   return (
@@ -57,13 +54,17 @@ export default function Contact() {
           Get in Touch
         </h2>
         <p className="mt-2 text-lg leading-8 text-gray-600 dark:text-gray-400">
-          I’d love to hear from you. Reach out with any questions or just to say hello!
+          I’d love to hear from you. Reach out with any questions or just to say
+          hello!
         </p>
       </div>
       <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100">
+            <label
+              htmlFor="first-name"
+              className="block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100"
+            >
               First name
             </label>
             <div className="mt-2.5">
@@ -79,7 +80,10 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100">
+            <label
+              htmlFor="last-name"
+              className="block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100"
+            >
               Last name
             </label>
             <div className="mt-2.5">
@@ -96,7 +100,10 @@ export default function Contact() {
           </div>
 
           <div className="sm:col-span-2">
-            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100">
+            <label
+              htmlFor="email"
+              className="block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100"
+            >
               Email
             </label>
             <div className="mt-2.5">
@@ -112,27 +119,30 @@ export default function Contact() {
             </div>
           </div>
           <div className="sm:col-span-2">
-        <label
-          htmlFor="phone-number"
-          className="block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100"
-        >
-          Phone number
-        </label>
-        <div className="relative mt-2.5">
-          <input
-            id="phone-number"
-            name="phoneNumber"
-            type="tel"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-            autoComplete="tel"
-            placeholder="Enter your phone number with country code"
-            className="block w-full rounded-md border-0 bg-white px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:bg-gray-800 dark:text-gray-100 dark:ring-gray-600"
-          />
-        </div>
-      </div>
+            <label
+              htmlFor="phone-number"
+              className="block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100"
+            >
+              Phone number
+            </label>
+            <div className="relative mt-2.5">
+              <input
+                id="phone-number"
+                name="phoneNumber"
+                type="tel"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+                autoComplete="tel"
+                placeholder="Enter your phone number with country code"
+                className="block w-full rounded-md border-0 bg-white px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:bg-gray-800 dark:text-gray-100 dark:ring-gray-600"
+              />
+            </div>
+          </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100">
+            <label
+              htmlFor="message"
+              className="block text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100"
+            >
               Message
             </label>
             <div className="mt-2.5">

@@ -277,5 +277,5 @@ module.exports = function typographyStyles({ theme }) {
         },
       },
     },
-  }
-}
+  };
+};

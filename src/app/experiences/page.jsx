@@ -1,7 +1,7 @@
-import { Card } from '@/components/Card'
-import { SimpleLayout } from '@/components/SimpleLayout'
-import { getAllExperiences } from '@/lib/experiences'
-import { formatDate } from '@/lib/formatDate'
+import { Card } from '@/components/Card';
+import { SimpleLayout } from '@/components/SimpleLayout';
+import { getAllExperiences } from '@/lib/experiences';
+import { formatDate } from '@/lib/formatDate';
 
 function Experience({ experience }) {
   return (
@@ -16,7 +16,7 @@ function Experience({ experience }) {
           className="md:hidden"
           decorate
         >
-          {(experience.date)}
+          {experience.date}
         </Card.Eyebrow>
         <Card.Description>{experience.description}</Card.Description>
         <Card.Cta>Read more</Card.Cta>
@@ -26,20 +26,19 @@ function Experience({ experience }) {
         dateTime={experience.date}
         className="mt-1 hidden md:block"
       >
-        {(experience.date)}
+        {experience.date}
       </Card.Eyebrow>
     </experience>
-  )
+  );
 }
 
 export const metadata = {
   title: 'Experience',
-  description:
-    'Work Experience',
-}
+  description: 'Work Experience',
+};
 
 export default async function ExperiencesIndex() {
-  let experiences = await getAllExperiences()
+  let experiences = await getAllExperiences();
 
   return (
     <SimpleLayout
@@ -54,5 +53,5 @@ export default async function ExperiencesIndex() {
         </div>
       </div>
     </SimpleLayout>
-  )
+  );
 }

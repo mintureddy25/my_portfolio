@@ -1,12 +1,12 @@
-'use client'
+'use client';
 
-import { useContext } from 'react'
-import { useRouter } from 'next/navigation'
+import { useContext } from 'react';
+import { useRouter } from 'next/navigation';
 
-import { AppContext } from '@/app/providers'
-import { Container } from '@/components/Container'
-import { Prose } from '@/components/Prose'
-import { formatDate } from '@/lib/formatDate'
+import { AppContext } from '@/app/providers';
+import { Container } from '@/components/Container';
+import { Prose } from '@/components/Prose';
+import { formatDate } from '@/lib/formatDate';
 
 function ArrowLeftIcon(props) {
   return (
@@ -18,12 +18,12 @@ function ArrowLeftIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
 export function ExperienceLayout({ experience, children }) {
-  let router = useRouter()
-  let { previousPathname } = useContext(AppContext)
+  let router = useRouter();
+  let { previousPathname } = useContext(AppContext);
 
   return (
     <Container className="mt-16 lg:mt-32">
@@ -49,7 +49,7 @@ export function ExperienceLayout({ experience, children }) {
                 className="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"
               >
                 <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
-                <span className="ml-3">{(experience.date)}</span>
+                <span className="ml-3">{experience.date}</span>
               </time>
             </header>
             <Prose className="mt-8" data-mdx-content>
@@ -59,5 +59,5 @@ export function ExperienceLayout({ experience, children }) {
         </div>
       </div>
     </Container>
-  )
+  );
 }

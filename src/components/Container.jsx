@@ -1,5 +1,5 @@
-import { forwardRef } from 'react'
-import clsx from 'clsx'
+import { forwardRef } from 'react';
+import clsx from 'clsx';
 
 export const ContainerOuter = forwardRef(function OuterContainer(
   { className, children, ...props },
@@ -9,8 +9,8 @@ export const ContainerOuter = forwardRef(function OuterContainer(
     <div ref={ref} className={clsx('sm:px-8', className)} {...props}>
       <div className="mx-auto w-full max-w-7xl lg:px-8">{children}</div>
     </div>
-  )
-})
+  );
+});
 
 export const ContainerInner = forwardRef(function InnerContainer(
   { className, children, ...props },
@@ -24,8 +24,8 @@ export const ContainerInner = forwardRef(function InnerContainer(
     >
       <div className="mx-auto max-w-2xl lg:max-w-5xl">{children}</div>
     </div>
-  )
-})
+  );
+});
 
 export const Container = forwardRef(function Container(
   { children, ...props },
@@ -35,5 +35,5 @@ export const Container = forwardRef(function Container(
     <ContainerOuter ref={ref} {...props}>
       <ContainerInner>{children}</ContainerInner>
     </ContainerOuter>
-  )
-})
+  );
+});

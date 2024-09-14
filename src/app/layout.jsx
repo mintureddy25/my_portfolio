@@ -1,13 +1,12 @@
-import { Providers } from '@/app/providers'
-import { Layout } from '@/components/Layout'
+import { Providers } from '@/app/providers';
+import { Layout } from '@/components/Layout';
 
-import '@/styles/tailwind.css'
+import '@/styles/tailwind.css';
 
 export const metadata = {
   title: {
     template: 'Saiteja Reddy',
-    default:
-      'Sai Teja Reddy',
+    default: 'Sai Teja Reddy',
   },
   description:
     'Hi, Iam Sai Teja Reddy Chappeta , software enginner from Hyderabad',
@@ -16,7 +15,7 @@ export const metadata = {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
     },
   },
-}
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -29,5 +28,5 @@ export default function RootLayout({ children }) {
         </Providers>
       </body>
     </html>
-  )
+  );
 }

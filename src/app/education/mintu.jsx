@@ -1,13 +1,13 @@
-import { Card } from '@/components/Card'
-import { Section } from '@/components/Section'
-import { SimpleLayout } from '@/components/SimpleLayout'
+import { Card } from '@/components/Card';
+import { Section } from '@/components/Section';
+import { SimpleLayout } from '@/components/SimpleLayout';
 
 function EducationSection({ children, ...props }) {
   return (
     <Section {...props}>
       <div className="space-y-16">{children}</div>
     </Section>
-  )
+  );
 }
 
 function Appearance({ title, description, event, cta, href }) {
@@ -20,14 +20,13 @@ function Appearance({ title, description, event, cta, href }) {
       <Card.Description>{description}</Card.Description>
       <Card.Cta>{cta}</Card.Cta>
     </Card>
-  )
+  );
 }
 
 export const metadata = {
   title: 'Education',
-  description:
-    'My Educational Journey',
-}
+  description: 'My Educational Journey',
+};
 
 export default function Education() {
   return (
@@ -77,5 +76,5 @@ export default function Education() {
         </EducationSection>
       </div>
     </SimpleLayout>
-  )
+  );
 }
