@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import clsx from 'clsx';
 
-
 const variantStyles = {
   primary:
     'bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70',
@@ -15,10 +14,8 @@ export function Button({ variant = 'primary', className, ...props }) {
     variantStyles[variant],
     className,
   );
-  if (props.href === '/CSTR_Resume_.pdf'){
-    return(
-      <a className={className} {...props} />
-    )
+  if (props.href === '/CSTR_Resume_.pdf') {
+    return <a className={className} {...props} />;
   }
 
   return typeof props.href === 'undefined' ? (
