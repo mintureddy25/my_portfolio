@@ -7,17 +7,6 @@ import { SimpleLayout } from '@/components/SimpleLayout';
 export default function ThankYou() {
   const router = useRouter();
   const [queryParam, setQueryParam] = useState(null);
-
-  useEffect(() => {
-    // Ensure the query object is defined and safely extract the `thanks` parameter
-    if (router.query) {
-      const thanks = router.query.thanks || null;
-      console.log('Query parameters:', router.query);
-      console.log("Extracted 'thanks':", thanks);
-      setQueryParam(thanks);
-    }
-  }, [router.query]);
-
   // Default messages
   const defaultTitle = 'Thanks for getting in touch!';
   const defaultIntro =
