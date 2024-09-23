@@ -107,7 +107,7 @@ export default function About() {
               Follow on X
             </SocialLink>
             <SocialLink
-              href="https://www.instagram.com/mintuu_25"
+              href="https://www.instagram.com/mintuu_25/?igsh=NXk4M2lyajB4OGJ2&utm_source=qr"
               icon={InstagramIcon}
               className="mt-4"
             >
