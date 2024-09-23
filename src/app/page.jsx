@@ -299,7 +299,7 @@ export default async function Home() {
               icon={XIcon}
             />
             <SocialLink
-              href="https://www.instagram.com/mintuu_25/?igsh=NXk4M2lyajB4OGJ2&utm_source=qr"
+              href="https://www.instagram.com/mintuu_25"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
