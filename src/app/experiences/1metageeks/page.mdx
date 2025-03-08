@@ -32,13 +32,18 @@ export default function ExperiencePage(props) {
     <ExperienceLayout experience={experience} {...props}>
       <section>
         <h2>Experience Details</h2>
-        <p><strong>Date:</strong> {experience.date}</p> {/* Added date display */}
+        <p>
+          <strong>Date:</strong> {experience.date}
+        </p>{' '}
+        {/* Added date display */}
         <p>{experience.description}</p>
         <h3>Responsibilities</h3>
         <ul>
-          {experience.details[0].responsibilities.map((responsibility, index) => (
-            <li key={index}>{responsibility}</li>
-          ))}
+          {experience.details[0].responsibilities.map(
+            (responsibility, index) => (
+              <li key={index}>{responsibility}</li>
+            ),
+          )}
         </ul>
       </section>
     </ExperienceLayout>

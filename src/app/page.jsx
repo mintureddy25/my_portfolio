@@ -18,7 +18,7 @@ import logoStarbucks from '@/images/logos/starbucks.svg';
 import logoHubhopper from '@/images/logos/hubhopper_logo.jpeg';
 import logoCognizant from '@/images/logos/download.jpeg';
 import logoPhotomath from '@/images/logos/photomath.png';
-import logoMetageeks from  '@/images/logos/metaggeeks.webp'
+import logoMetageeks from '@/images/logos/metaggeeks.webp';
 import image1 from '@/images/photos/image-1.jpg';
 import image2 from '@/images/photos/image-2.jpg';
 import image3 from '@/images/photos/image-3.jpg';
@@ -295,10 +295,10 @@ export default async function Home() {
             Sai Teja Reddy Chappeta
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            A Full Stack Developer with a strong background in both
-            front-end and back-end technologies. Passionate about blending
-            coding skills with creative video production, particularly in the
-            realm of YouTube content creation.
+            A Full Stack Developer with a strong background in both front-end
+            and back-end technologies. Passionate about blending coding skills
+            with creative video production, particularly in the realm of YouTube
+            content creation.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

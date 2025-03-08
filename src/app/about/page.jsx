@@ -60,29 +60,68 @@ export default function About() {
             I’m Sai Teja Reddy Chappeta, I live in Hyderabad City.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-  <p>
-    I am a seasoned Full Stack Developer with a robust background in designing and optimizing complex applications. I have worked on a variety of projects, utilizing technologies such as React, Node.js, AWS, and Elasticsearch to deliver high-impact results. My expertise includes developing and integrating advanced features such as analytics, chapter management, and automated systems.
-  </p>
-  <p>
-    At Metageeks Technologies, I contributed to the development of decentralized applications (dApps) and the integration of blockchain-based payment systems. I worked extensively with Ethereum, Node.js, MongoDB, and Next.js to build secure and efficient Web3 solutions, enhancing the company’s capabilities in blockchain technology.
-  </p>
-  <p>
-    Previously, at Hubhopper in Delhi, I focused on enhancing podcast platforms by integrating advanced features such as analytics, chapter management, and automated email systems. I was responsible for optimizing frontend and backend integrations, as well as implementing cloud storage solutions, all while ensuring a seamless user experience.
-  </p>
-  <p>
-    At Cognizant Technology Solutions in Chennai, I led the development of an employee management website, including the creation of a leave portal and an RTO tracking feature. My role involved handling end-to-end project development and system integration, with a strong focus on user authentication, third-party API integrations, and role-based access control.
-  </p>
-  <p>
-    During my internship at Cognizant, I gained hands-on experience in full-stack development, where I utilized AngularJS, HTML, CSS, and Java Spring Boot. This experience provided me with a solid foundation in both frontend and backend technologies, contributing to my growth as a developer.
-  </p>
-  <p>
-    As a freelancer, I developed a comprehensive food delivery app, Foodie, using a React frontend and a Node.js backend with Express.js APIs. This project included customer and eatery dashboards, secure API interactions, and robust data management with MySQL. Additionally, I built an automated email sender tool for recruiters, which allowed users to send personalized emails to multiple recruiters at once, streamlining the job application process. I also contributed to UI enhancements for educational tools like Photomath and Chegg and designed features for a cricket betting application, showcasing my adaptability across diverse domains.
-  </p>
-  <p>
-    My educational background in Mechatronics from Sastra Deemed University, combined with a strong foundation in various programming languages and frameworks, has equipped me with a solid technical acumen. I am passionate about leveraging my skills to drive innovation and deliver effective solutions, continuously seeking opportunities to grow and contribute to impactful projects.
-  </p>
-</div>
-
+            <p>
+              I am a seasoned Full Stack Developer with a robust background in
+              designing and optimizing complex applications. I have worked on a
+              variety of projects, utilizing technologies such as React,
+              Node.js, AWS, and Elasticsearch to deliver high-impact results. My
+              expertise includes developing and integrating advanced features
+              such as analytics, chapter management, and automated systems.
+            </p>
+            <p>
+              At Metageeks Technologies, I contributed to the development of
+              decentralized applications (dApps) and the integration of
+              blockchain-based payment systems. I worked extensively with
+              Ethereum, Node.js, MongoDB, and Next.js to build secure and
+              efficient Web3 solutions, enhancing the company’s capabilities in
+              blockchain technology.
+            </p>
+            <p>
+              Previously, at Hubhopper in Delhi, I focused on enhancing podcast
+              platforms by integrating advanced features such as analytics,
+              chapter management, and automated email systems. I was responsible
+              for optimizing frontend and backend integrations, as well as
+              implementing cloud storage solutions, all while ensuring a
+              seamless user experience.
+            </p>
+            <p>
+              At Cognizant Technology Solutions in Chennai, I led the
+              development of an employee management website, including the
+              creation of a leave portal and an RTO tracking feature. My role
+              involved handling end-to-end project development and system
+              integration, with a strong focus on user authentication,
+              third-party API integrations, and role-based access control.
+            </p>
+            <p>
+              During my internship at Cognizant, I gained hands-on experience in
+              full-stack development, where I utilized AngularJS, HTML, CSS, and
+              Java Spring Boot. This experience provided me with a solid
+              foundation in both frontend and backend technologies, contributing
+              to my growth as a developer.
+            </p>
+            <p>
+              As a freelancer, I developed a comprehensive food delivery app,
+              Foodie, using a React frontend and a Node.js backend with
+              Express.js APIs. This project included customer and eatery
+              dashboards, secure API interactions, and robust data management
+              with MySQL. Additionally, I built an automated email sender tool
+              for recruiters, which allowed users to send personalized emails to
+              multiple recruiters at once, streamlining the job application
+              process. I also contributed to UI enhancements for educational
+              tools like Photomath and Chegg and designed features for a cricket
+              betting application, showcasing my adaptability across diverse
+              domains.
+            </p>
+            <p>
+              My educational background in Mechatronics from Sastra Deemed
+              University, combined with a strong foundation in various
+              programming languages and frameworks, has equipped me with a solid
+              technical acumen. I am passionate about leveraging my skills to
+              drive innovation and deliver effective solutions, continuously
+              seeking opportunities to grow and contribute to impactful
+              projects.
+            </p>
+          </div>
         </div>
         <div className="lg:pl-20">
           <ul role="list">

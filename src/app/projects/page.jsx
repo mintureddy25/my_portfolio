@@ -8,7 +8,7 @@ import logoHelioStream from '@/images/logos/helio-stream.svg';
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg';
 import logoPlanetaria from '@/images/logos/planetaria.svg';
 import logoFacebook from '@/images/logos/facebook.svg';
-import logoGmail from '@/images/logos/gmail-new.png'
+import logoGmail from '@/images/logos/gmail-new.png';
 const projects = [
   {
     name: 'Foodie-Food Delivery App (Frontend)',
@@ -39,8 +39,7 @@ const projects = [
       label: 'Email Sender',
     },
     logo: logoGmail, // Replace with the logo of your project
-  }
-  ,
+  },
   {
     name: 'Audio Editor',
     description:
