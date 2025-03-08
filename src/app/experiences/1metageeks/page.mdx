@@ -1,0 +1,46 @@
+import { ExperienceLayout } from '@/components/ExperienceLayout';
+
+export const experience = {
+  title: 'Metageeks Technologies',
+  description: `At Metageeks Technologies, a leading Web3 development company based in Noida, I worked as a Web3 Developer. My role focused on integrating blockchain-based payment solutions, implementing decentralized systems, and collaborating on cutting-edge Web3 technologies. I contributed significantly to the development of projects involving Ethereum transactions, smart contract integration, and blockchain-based functionalities for secure and efficient payment processing.`,
+  date: 'Nov 2024 – Present', // Added date field
+  details: [
+    {
+      role: 'Web3 Developer',
+      company: 'Metageeks Technologies',
+      location: 'Noida',
+      responsibilities: [
+        'Completed end-to-end integration of the Saturn Protocol, enabling blockchain-based payments, including Ethereum transactions and ETH token generation, using Node.js, MongoDB, and Next.js for front-end development.',
+        'Developed payment solutions on the blockchain, supporting payments through Node.js and Ethereum blockchain, ensuring secure and efficient transaction handling.',
+        'Contributed to the integration of the main Metageeks website with Contentful CMS for dynamic content management, ensuring smooth data storage and retrieval through Contentful APIs.',
+        'Initiated and led the development of a new project for the Goat Network, focused on integrating blockchain payments, data from Dia Oracle, and enabling crypto trading and bidding functionalities.',
+        'Designed and implemented Role Management for event creation and management using Nest.js, ensuring effective permission management and smooth user experience.',
+        'Worked on integrating Privy for secure access abstraction for wallet addresses and transactions, enhancing user privacy and ensuring secure handling of wallet interactions.',
+        'Collaborated on agent protocols to build AI agents for creating chatbots using Langflow and Flowise, enabling decentralized AI interactions and enhancing automated communication capabilities.',
+      ],
+    },
+  ],
+};
+
+export const metadata = {
+  title: experience.title,
+  description: experience.description,
+};
+
+export default function ExperiencePage(props) {
+  return (
+    <ExperienceLayout experience={experience} {...props}>
+      <section>
+        <h2>Experience Details</h2>
+        <p><strong>Date:</strong> {experience.date}</p> {/* Added date display */}
+        <p>{experience.description}</p>
+        <h3>Responsibilities</h3>
+        <ul>
+          {experience.details[0].responsibilities.map((responsibility, index) => (
+            <li key={index}>{responsibility}</li>
+          ))}
+        </ul>
+      </section>
+    </ExperienceLayout>
+  );
+}

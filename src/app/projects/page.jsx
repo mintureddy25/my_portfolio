@@ -8,7 +8,7 @@ import logoHelioStream from '@/images/logos/helio-stream.svg';
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg';
 import logoPlanetaria from '@/images/logos/planetaria.svg';
 import logoFacebook from '@/images/logos/facebook.svg';
-
+import logoGmail from '@/images/logos/gmail-new.png'
 const projects = [
   {
     name: 'Foodie-Food Delivery App (Frontend)',
@@ -30,6 +30,17 @@ const projects = [
     },
     logo: logoAnimaginary,
   },
+  {
+    name: 'Email Sender',
+    description:
+      'Developed an automated email sender tool that allows users to send personalized emails to multiple recruiters, streamlining the job application process. The tool integrates a simple form where users can input email subjects, body text, and attachments, which are then sent to selected recruiters via an automated process.',
+    link: {
+      href: 'https://github.com/mintureddy25/send_email', // Replace with your GitHub link
+      label: 'Email Sender',
+    },
+    logo: logoGmail, // Replace with the logo of your project
+  }
+  ,
   {
     name: 'Audio Editor',
     description:

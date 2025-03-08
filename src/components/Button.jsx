@@ -14,7 +14,7 @@ export function Button({ variant = 'primary', className, ...props }) {
     variantStyles[variant],
     className,
   );
-  if (props.href === '/CSTR_Resume_.pdf') {
+  if (props.href === '/SaiTeja_Resume.pdf') {
     return <a className={className} {...props} />;
   }
 

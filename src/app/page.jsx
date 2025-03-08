@@ -18,6 +18,7 @@ import logoStarbucks from '@/images/logos/starbucks.svg';
 import logoHubhopper from '@/images/logos/hubhopper_logo.jpeg';
 import logoCognizant from '@/images/logos/download.jpeg';
 import logoPhotomath from '@/images/logos/photomath.png';
+import logoMetageeks from  '@/images/logos/metaggeeks.webp'
 import image1 from '@/images/photos/image-1.jpg';
 import image2 from '@/images/photos/image-2.jpg';
 import image3 from '@/images/photos/image-3.jpg';
@@ -183,11 +184,18 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
+      company: 'Metageeks Technologies',
+      title: 'Web3 Developer',
+      logo: logoMetageeks,
+      start: 'Nov 2024', // Add specific date range if available
+      end: 'Present', // Add specific end date or 'Present'
+    },
+    {
       company: 'Hubhopper',
       title: 'Full Stack Developer',
       logo: logoHubhopper,
       start: 'Apr 2024', // Add specific date range if available
-      end: 'Present', // Add specific end date or 'Present'
+      end: 'Oct 2024', // Add specific end date or 'Present'
     },
     {
       company: 'Cognizant Technology Solutions',
@@ -207,8 +215,8 @@ function Resume() {
       company: 'Freelancing',
       title: 'Freelance Developer',
       logo: logoPlanetaria,
-      start: 'Apr 2024',
-      end: 'July 2024',
+      start: 'Oct 2022',
+      end: 'Apr 2023',
     },
     {
       company: 'Photomath',
@@ -231,7 +239,7 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="/CSTR_Resume_.pdf"
+        href="/SaiTeja_Resume.pdf"
         download="saiteja_reddy_resume.pdf"
         variant="secondary"
         className="group mt-6 w-full"
@@ -287,7 +295,7 @@ export default async function Home() {
             Sai Teja Reddy Chappeta
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            A Full Stack Developer at Hubhopper with a strong background in both
+            A Full Stack Developer with a strong background in both
             front-end and back-end technologies. Passionate about blending
             coding skills with creative video production, particularly in the
             realm of YouTube content creation.
