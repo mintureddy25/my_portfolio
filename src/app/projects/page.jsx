@@ -9,7 +9,18 @@ import logoOpenShuttle from '@/images/logos/open-shuttle.svg';
 import logoPlanetaria from '@/images/logos/planetaria.svg';
 import logoFacebook from '@/images/logos/facebook.svg';
 import logoGmail from '@/images/logos/gmail-new.png';
+import logoFlightBooking from '@/images/logos/flightsImage.png';
 const projects = [
+  {
+    name: 'FlightBooking (SaiTeja Flights)',
+    description:
+      'I developed the front end for the FlightBooking app, a platform for booking flights and managing travel, using React and Tailwind CSS. The app includes both customer and admin interfaces, with features such as flight search, booking, and payment options.',
+    link: {
+      href: 'https://flights.saiteja.online',
+      label: 'FlightBooking App',
+    },
+    logo: logoFlightBooking,
+  },
   {
     name: 'Foodie-Food Delivery App (Frontend)',
     description:
