@@ -1,26 +1,23 @@
 import { ExperienceLayout } from '@/components/ExperienceLayout';
 
 export const experience = {
-  title: 'Freelancing',
-  description: `As a Freelance Developer and Freelance Expert based in Hyderabad, I worked on a variety of projects. I designed and developed features for cricket betting platforms, including match betting and round-by-round betting functionalities. Additionally, I enhanced user interfaces and solution views for mathematical problems using LaTeX in Photomath.`,
-  date: 'Apr 2019 – July 2024', // Combined date range for all freelance roles
+  title: 'Tolaram Cricket',
+  description: `Worked as a Full Stack Developer on a freelance project for the Tolaram Premier League cricket tournament. Built a tournament betting system using MySQL, React, and Node.js, successfully handling 1000+ concurrent users with match betting, comments, Super 12 team selection, real-time leaderboards, and a comprehensive admin panel.`,
+  date: 'Feb 2025 – May 2025',
   details: [
     {
-      role: 'Freelance Developer',
-      company: 'Freelancing',
+      role: 'Full Stack Developer (Freelance)',
+      company: 'Tolaram Cricket',
       location: 'Hyderabad',
-      dateRange: 'Feb 2024 – May 2024',
+      dateRange: 'Feb 2025 – May 2025',
       responsibilities: [
-        'Designed and developed features for cricket betting, including match betting and round-by-round betting functionalities.',
-      ],
-    },
-    {
-      role: 'Freelance Expert',
-      company: 'Freelancing',
-      location: 'Hyderabad',
-      dateRange: 'Apr 2019 – July 2022',
-      responsibilities: [
-        'Contributed to enhancing the user interface and solution views for mathematical problems using LaTeX in Photomath.',
+        'Developed a tournament betting system for cricket matches using MySQL, React, and Node.js, successfully handling 1000+ concurrent users, allowing users to select matches and place bets on specific questions.',
+        'Implemented a comments feature where users can interact in match-specific rooms, creating backend infrastructure with Node.js to assign comments to specific tournament rooms.',
+        'Engineered tournament round betting functionality, enabling users to place bets on different stages of tournaments such as semi-finals using Node.js.',
+        'Created "Super 12" feature similar to Dream11, allowing users to select teams of 12 players with captain and vice-captain designations, implementing credit limits and team creation constraints in Node.js.',
+        'Developed a sophisticated leaderboard system using Redis sorted lists for real-time rankings, with periodic database backups via cron jobs running hourly for data persistence in Node.js.',
+        'Built Python processing scripts to calculate user points based on betting outcomes and player performances, automatically updating user standings.',
+        'Designed comprehensive admin panel enabling tournament management, including team creation, match setup, player score updates, and analytics dashboard for monitoring match and user betting statistics using Node.js.',
       ],
     },
   ],
@@ -38,29 +35,16 @@ export default function ExperiencePage(props) {
         <h2>Experience Details</h2>
         <p>
           <strong>Date:</strong> {experience.date}
-        </p>{' '}
-        {/* Added date display */}
+        </p>
         <p>{experience.description}</p>
-        {experience.details.map((role, index) => (
-          <div key={index}>
-            <h3>{role.role}</h3>
-            <p>
-              <strong>Company:</strong> {role.company}
-            </p>
-            <p>
-              <strong>Location:</strong> {role.location}
-            </p>
-            <p>
-              <strong>Date Range:</strong> {role.dateRange}
-            </p>
-            <h4>Responsibilities</h4>
-            <ul>
-              {role.responsibilities.map((responsibility, idx) => (
-                <li key={idx}>{responsibility}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        <h3>Responsibilities</h3>
+        <ul>
+          {experience.details[0].responsibilities.map(
+            (responsibility, index) => (
+              <li key={index}>{responsibility}</li>
+            ),
+          )}
+        </ul>
       </section>
     </ExperienceLayout>
   );

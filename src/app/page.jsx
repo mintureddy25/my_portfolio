@@ -20,6 +20,7 @@ import logoCognizant from '@/images/logos/download.jpeg';
 import logoPhotomath from '@/images/logos/photomath.png';
 import logoMetageeks from '@/images/logos/metaggeeks.webp';
 import logoPayatu from '@/images/logos/payatu.jpeg';
+import logoTolaram from '@/images/logos/tolaram.png';
 import image1 from '@/images/photos/image-1.jpg';
 import image2 from '@/images/photos/image-2.jpg';
 import image3 from '@/images/photos/image-3.jpg';
@@ -192,6 +193,13 @@ function Resume() {
       end: 'Present',
     },
     {
+      company: 'Tolaram Cricket (Freelance)',
+      title: 'Full Stack Developer',
+      logo: logoTolaram,
+      start: 'Feb 2025',
+      end: 'May 2025',
+    },
+    {
       company: 'Metageeks Technologies',
       title: 'Web3 Developer',
       logo: logoMetageeks,
@@ -202,8 +210,8 @@ function Resume() {
       company: 'Hubhopper',
       title: 'Full Stack Developer',
       logo: logoHubhopper,
-      start: 'Apr 2024', // Add specific date range if available
-      end: 'Oct 2024', // Add specific end date or 'Present'
+      start: 'Apr 2024',
+      end: 'Oct 2024',
     },
     {
       company: 'Cognizant Technology Solutions',
@@ -220,15 +228,8 @@ function Resume() {
       end: 'Mar 2023',
     },
     {
-      company: 'Freelancing',
-      title: 'Freelance Developer',
-      logo: logoPlanetaria,
-      start: 'Feb 2024',
-      end: 'May 2024',
-    },
-    {
       company: 'Photomath',
-      title: 'Freelance  Math Expert',
+      title: 'Freelance Math Expert',
       logo: logoPhotomath,
       start: 'Apr 2019',
       end: 'July 2022',

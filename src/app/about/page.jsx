@@ -111,17 +111,11 @@ export default function About() {
               to my growth as a developer.
             </p>
             <p>
-              As a freelancer, I developed a comprehensive food delivery app,
-              Foodie, using a React frontend and a Node.js backend with
-              Express.js APIs. This project included customer and eatery
-              dashboards, secure API interactions, and robust data management
-              with MySQL. Additionally, I built an automated email sender tool
-              for recruiters, which allowed users to send personalized emails to
-              multiple recruiters at once, streamlining the job application
-              process. I also contributed to UI enhancements for educational
-              tools like Photomath and Chegg and designed features for a cricket
-              betting application, showcasing my adaptability across diverse
-              domains.
+              As a freelance developer, I built the Tolaram Cricket Tournament
+              (TPL) platform — a betting system supporting 1000+ concurrent
+              users with match selection, real-time comments, Super 12 team
+              selection similar to Dream11, live leaderboards, and a
+              comprehensive admin panel for tournament management using React.
             </p>
             <p>
               My educational background in Mechatronics from Sastra Deemed
