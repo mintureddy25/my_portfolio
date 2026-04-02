@@ -93,6 +93,12 @@ function Experience({ experience }) {
     <Card as="experience">
       <Card.Title href={`/experiences/${experience.slug}`}>
         {experience.title}
+        {experience.slug === '0payatu' && (
+          <span className="ml-2 text-sm font-normal text-zinc-400">
+            {' '}
+            ⭐ Rising Star Award
+          </span>
+        )}
       </Card.Title>
       <Card.Eyebrow as="time" dateTime={experience.date} decorate>
         {experience.date}
@@ -186,7 +192,7 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'Payatu',
+      company: 'Payatu ⭐',
       title: 'Full Stack Developer',
       logo: logoPayatu,
       start: 'June 2025',
