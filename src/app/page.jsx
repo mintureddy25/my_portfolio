@@ -19,6 +19,7 @@ import logoHubhopper from '@/images/logos/hubhopper_logo.jpeg';
 import logoCognizant from '@/images/logos/download.jpeg';
 import logoPhotomath from '@/images/logos/photomath.png';
 import logoMetageeks from '@/images/logos/metaggeeks.webp';
+import logoPayatu from '@/images/logos/payatu.jpeg';
 import image1 from '@/images/photos/image-1.jpg';
 import image2 from '@/images/photos/image-2.jpg';
 import image3 from '@/images/photos/image-3.jpg';
@@ -184,11 +185,18 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
+      company: 'Payatu',
+      title: 'Full Stack Developer',
+      logo: logoPayatu,
+      start: 'June 2025',
+      end: 'Present',
+    },
+    {
       company: 'Metageeks Technologies',
       title: 'Web3 Developer',
       logo: logoMetageeks,
-      start: 'Nov 2024', // Add specific date range if available
-      end: 'Present', // Add specific end date or 'Present'
+      start: 'Nov 2024',
+      end: 'Feb 2025',
     },
     {
       company: 'Hubhopper',
@@ -215,8 +223,8 @@ function Resume() {
       company: 'Freelancing',
       title: 'Freelance Developer',
       logo: logoPlanetaria,
-      start: 'Oct 2022',
-      end: 'Apr 2023',
+      start: 'Feb 2024',
+      end: 'May 2024',
     },
     {
       company: 'Photomath',
@@ -285,7 +293,7 @@ function Photos() {
 }
 
 export default async function Home() {
-  let experiences = (await getAllExperiences()).slice(0, 4);
+  let experiences = (await getAllExperiences()).slice(0, 5);
 
   return (
     <>
@@ -307,7 +315,7 @@ export default async function Home() {
               icon={XIcon}
             />
             <SocialLink
-              href="https://www.instagram.com/mintuu_25/?igsh=NXk4M2lyajB4OGJ2&utm_source=qr"
+              href="https://www.instagram.com/heyitsmintu"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />

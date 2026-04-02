@@ -1,0 +1,52 @@
+import { ExperienceLayout } from '@/components/ExperienceLayout';
+
+export const experience = {
+  title: 'Payatu',
+  description: `At Payatu, a cybersecurity company based in Pune, I worked as a Full Stack Developer building their firmware security analysis platform. My role involved developing real-time notification systems, AI chatting interfaces with SSE streaming, migrating APIs to RTK Query for better performance, creating dashboards for CVE and package management, and building comprehensive firmware analysis tools including a decompiler UI, SBOM reports, and file manager interfaces.`,
+  date: 'June 2025 – Present',
+  details: [
+    {
+      role: 'Full Stack Developer',
+      company: 'Payatu',
+      location: 'Pune',
+      responsibilities: [
+        'Built a real-time notifications system with global notification management using Server-Sent Events (SSE) connections in Next.js, ensuring seamless live updates across all application views.',
+        'Migrated legacy API calls to RTK Query, eliminating manual duplicate API requests, improving performance through automatic caching, and reducing unnecessary re-renders across the application.',
+        'Designed and developed an AI chatting interface with a seamless conversational UI in Next.js, integrated with SSE for real-time streaming responses, and wrote backend plugins that the AI uses internally to connect with the database and workflow systems.',
+        'Integrated Redux store for centralized state management across the application, ensuring consistent data flow and predictable UI state transitions.',
+        'Built comprehensive asset and SBOM report views, and implemented report generation logic converting HTML to PDF in the backend for downloadable reports.',
+        'Integrated Web Workers for heavy computation tasks and developed a decompiler UI to handle and display large amounts of data seamlessly, including potential day-zero vulnerability handling.',
+        'Developed CVE and package dashboards with interactive data visualizations, managed global alert and toast notification systems fully controlled by backend configuration.',
+        'Created chat APIs in the backend for the AI chatting feature, handling message processing, conversation history, and plugin orchestration.',
+        'Created a file manager interface for firmware file browsing and display, along with SBOM dashboard, firmware management UI, and numerous frontend enhancements across the platform.',
+      ],
+    },
+  ],
+};
+
+export const metadata = {
+  title: experience.title,
+  description: experience.description,
+};
+
+export default function ExperiencePage(props) {
+  return (
+    <ExperienceLayout experience={experience} {...props}>
+      <section>
+        <h2>Experience Details</h2>
+        <p>
+          <strong>Date:</strong> {experience.date}
+        </p>
+        <p>{experience.description}</p>
+        <h3>Responsibilities</h3>
+        <ul>
+          {experience.details[0].responsibilities.map(
+            (responsibility, index) => (
+              <li key={index}>{responsibility}</li>
+            ),
+          )}
+        </ul>
+      </section>
+    </ExperienceLayout>
+  );
+}

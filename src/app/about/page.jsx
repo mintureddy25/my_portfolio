@@ -64,9 +64,20 @@ export default function About() {
               I am a seasoned Full Stack Developer with a robust background in
               designing and optimizing complex applications. I have worked on a
               variety of projects, utilizing technologies such as React,
-              Node.js, AWS, and Elasticsearch to deliver high-impact results. My
-              expertise includes developing and integrating advanced features
-              such as analytics, chapter management, and automated systems.
+              Next.js, Node.js, AWS, and Elasticsearch to deliver high-impact
+              results. My expertise includes developing and integrating advanced
+              features such as analytics, real-time systems, AI interfaces, and
+              automated systems.
+            </p>
+            <p>
+              At Payatu, a cybersecurity company in Pune, I work as a Full Stack
+              Developer building their firmware security analysis platform. I
+              developed real-time notification systems using SSE, migrated APIs
+              to RTK Query for better performance, designed an AI chatting
+              interface with streaming responses, and built comprehensive
+              dashboards for CVE and package management. I also created a
+              decompiler UI with Web Workers, file manager interfaces for
+              firmware analysis, and SBOM report generation systems.
             </p>
             <p>
               At Metageeks Technologies, I contributed to the development of
@@ -129,7 +140,7 @@ export default function About() {
               Follow on X
             </SocialLink>
             <SocialLink
-              href="https://www.instagram.com/mintuu_25/?igsh=NXk4M2lyajB4OGJ2&utm_source=qr"
+              href="https://www.instagram.com/heyitsmintu"
               icon={InstagramIcon}
               className="mt-4"
             >
