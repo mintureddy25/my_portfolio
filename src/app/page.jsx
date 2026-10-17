@@ -8,6 +8,7 @@ import { Container } from '@/components/Container';
 import {
   GitHubIcon,
   InstagramIcon,
+  YouTubeIcon,
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons';
@@ -18,7 +19,6 @@ import logoStarbucks from '@/images/logos/starbucks.svg';
 import logoHubhopper from '@/images/logos/hubhopper_logo.jpeg';
 import logoCognizant from '@/images/logos/download.jpeg';
 import logoPhotomath from '@/images/logos/photomath.png';
-import logoMetageeks from '@/images/logos/metaggeeks.webp';
 import logoPayatu from '@/images/logos/payatu.jpeg';
 import logoTolaram from '@/images/logos/tolaram.png';
 import image1 from '@/images/photos/image-1.jpg';
@@ -206,13 +206,6 @@ function Resume() {
       end: 'May 2025',
     },
     {
-      company: 'Metageeks Technologies',
-      title: 'Web3 Developer',
-      logo: logoMetageeks,
-      start: 'Nov 2024',
-      end: 'Feb 2025',
-    },
-    {
       company: 'Hubhopper',
       title: 'Full Stack Developer',
       logo: logoHubhopper,
@@ -325,6 +318,11 @@ export default async function Home() {
               href="https://www.instagram.com/heyitsmintu"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
+            />
+            <SocialLink
+              href="https://www.youtube.com/@heyitsmintu"
+              aria-label="Subscribe on YouTube"
+              icon={YouTubeIcon}
             />
             <SocialLink
               href="https://github.com/mintureddy25"

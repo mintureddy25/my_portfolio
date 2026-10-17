@@ -73,19 +73,15 @@ export default function About() {
               At Payatu, a cybersecurity company in Pune, I work as a Full Stack
               Developer building their firmware security analysis platform. I
               developed real-time notification systems using SSE, migrated APIs
-              to RTK Query for better performance, designed an AI chatting
-              interface with streaming responses, and built comprehensive
-              dashboards for CVE and package management. I also created a
-              decompiler UI with Web Workers, file manager interfaces for
-              firmware analysis, and SBOM report generation systems.
-            </p>
-            <p>
-              At Metageeks Technologies, I contributed to the development of
-              decentralized applications (dApps) and the integration of
-              blockchain-based payment systems. I worked extensively with
-              Ethereum, Node.js, MongoDB, and Next.js to build secure and
-              efficient Web3 solutions, enhancing the company’s capabilities in
-              blockchain technology.
+              to RTK Query for better performance, designed a Gen AI chatting
+              interface with streaming responses, and wrote Gen AI plugins that
+              the AI agent uses internally to connect with the database and
+              workflow systems. I also built comprehensive dashboards for CVE
+              and package management, created a decompiler UI with Web Workers,
+              file manager interfaces for firmware analysis, and SBOM report
+              generation systems. I also gained knowledge in developing Gen AI
+              agents and Gen AI plugins for chatbot systems and integrated
+              blockchain wallets for bridge transactions.
             </p>
             <p>
               Previously, at Hubhopper in Delhi, I focused on enhancing podcast

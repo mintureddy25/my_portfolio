@@ -10,6 +10,7 @@ import logoPlanetaria from '@/images/logos/planetaria.svg';
 import logoFacebook from '@/images/logos/facebook.svg';
 import logoGmail from '@/images/logos/gmail-new.png';
 import logoFlightBooking from '@/images/logos/flightsImage.png';
+import logoGameController from '@/images/logos/open-shuttle.svg';
 const projects = [
   {
     name: 'FlightBooking (SaiTeja Flights)',
@@ -70,6 +71,16 @@ const projects = [
       label: 'facebook_pages',
     },
     logo: logoFacebook,
+  },
+  {
+    name: 'Tic-Tac-Toe Multiplayer',
+    description:
+      'Built a real-time multiplayer Tic-Tac-Toe game using React and Nakama game server. Features live WebSocket connections for matchmaking, move synchronization, server-authoritative game logic, leaderboard system, and private room support.',
+    link: {
+      href: 'https://github.com/mintureddy25/tic-tac-toe-multiplayer',
+      label: 'Tic-Tac-Toe Multiplayer',
+    },
+    logo: logoGameController,
   },
 ];
 function LinkIcon(props) {
